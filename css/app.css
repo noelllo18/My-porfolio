@@ -71,29 +71,35 @@
       }
       
       body {
+        background-image: linear-gradient(black,var(--pallete-1));
         font-family: "Poppins", serif;
         font-size: 1rem;
         line-height: 1.8;
-        color: var(--black);
+        color: var(--white);
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         letter-spacing: var(--letter-spacing-tight);
         flex-direction: column;
+        
       }
       
       h1 {
-        font-size: var(--text-h2);
-        font-weight: 500;
-        line-height: 1.5;
+        font-size: clamp(0.3em, 5vw, 5em);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-normal);
+        letter-spacing: var(--letter-spacing-tight);
         text-align: center;
+        color: var(--white);
+        margin-bottom: 20px;
       }
       h2{
         font-size: var(--text-paragraph);
       }
       p{
         font-size: var(--text-paragraph);
+        color: var(--white);
       }
 
       
@@ -108,17 +114,21 @@
         margin: 0 auto;
       }
       nav{
-        display: flex;
-        gap: 20px;
-        padding: 1.0rem 1.5rem;
-        position: fixed;
-        background-color: black;
-        width: 100%;
-        z-index: 99;
-        top: 0;
-        left: 0;
-        right: 0;
-        justify-content: space-between;
+       display: flex;
+       position: fixed;
+       background-color: #023336;
+       bottom: 20px;
+       width: 1200px;
+       height: 60px;
+       border-radius: 25px;
+       max-width: 90%;
+      margin: 0 auto;
+      background-color: transparent;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.43);
+      box-shadow: 0 2px 15px rgba(255, 255, 255, .25);
+
+
        
         
       }
@@ -134,7 +144,7 @@
       .menu-wrapper{
         background-color: transparent;
         backdrop-filter: blur(15px);
-        border: 1px solid rgba(255, 255, 255, 0.43);
+        
         color: var(--white);
         border-radius: 20px;
         justify-content: center;
@@ -145,7 +155,7 @@
         height: 50px;
        
         opacity: 0.5;
-        box-shadow: 0 2px 15px rgba(255, 255, 255, .25);
+        
       }
 
       .menu-wrapper, a{
@@ -167,17 +177,24 @@
         
 
       }
+      .icon-container{
+        display: flex;
+        margin-top: 50px;
+      }
       .icons{
+        display: flex;
         background-color: transparent;
         backdrop-filter: blur(15px);
         color: var(--white);
         border-radius: 20px;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
         display: flex;
         border-radius: 50%;
         height: 50px;
         width: 50px;
+        background-color: #111142;
         margin-right: 20px;
         border: 1px solid #380ce6;
         box-shadow: 0 2px 15px#4321cc;
@@ -226,13 +243,9 @@
         line-height: var(--line-height-tight);
         
         
+        
       }
-      h1{
-        font-size: clamp(0.3em, 5vw, 5em);
-        font-weight: var(--font-weight-bold);
-        line-height: var(--line-height-normal);
-        letter-spacing: var(--letter-spacing-tight);
-      }
+     
       .name{
         background: -webkit-linear-gradient(90deg, #111142, #00ffff);
         background-clip: text;
@@ -243,10 +256,9 @@
       
       .img-container img{
         margin-top: 250px;
-        
+        left: ;
         height: 150px;
         width: 200px;
-        border-radius: 50%;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 25);
         
         }
@@ -262,6 +274,8 @@
         gap: 50px;
         position: relative;
         margin-bottom: 150px;
+        color: var(--white);
+        
       }
      
       .progress {
@@ -273,7 +287,9 @@
         flex-direction: column;
         width: 500px;
         gap: 20px;
+        
       }
+      
       Progress{
         font-size: 2.4rem;
       }
@@ -294,8 +310,8 @@
        .project-name{
         height: 500px;
         width: 100%;
-        font-size: 1.2rem;
-        color: var(--black);
+        font-size: var(--text-h2);
+        color: var(--white);
         text-decoration: none;
         display: flex;
         position: absolute;
