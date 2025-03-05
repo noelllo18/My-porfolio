@@ -1,6 +1,11 @@
+html{
+    font-size: 62.5%;
+}
+
 .container-game{
     
-    backdrop-filter: blur(20px);
+ 
+    /* background-color: #94e90b; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,25 +21,24 @@
    
 }
 .move-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
     background-color: transparent ;
     backdrop-filter: blur(5px);
-    align-items: center;
-    justify-content: center;    
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
-    gap: 10px ;
-    margin-bottom: 150px;
     
+    width: 100%;
    
 }
 .function-container{
-    display:flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  
 
+ 
     
 
 }
@@ -62,12 +66,13 @@
 }
 .move-button{
     height: 70px;
-    width: 80px;
+    max-width: 90%;
+    margin: 0 auto;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid #7eb426;
     box-shadow: 0 2px 15px#94e90b;
-    padding: 1.0rem 1.5rem ;
+    margin-left: 50px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -83,27 +88,29 @@
     margin-bottom: 60px;
 }
 .reset-btn{
-    padding: 1.0rem 1.5rem;
+    padding: 1.0rem 5.5rem;
     background-color: rgb(21, 132, 230);
-    width: 150px;
+    display: inline-flex;
     border: none;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    margin-left: 20%;
+    margin: 0 10px;
     
 }
 .js-auto{
-    padding: 1.0rem 1.5rem;
+    padding: 1.0rem 5.0rem;
     background-color: rgb(39, 131, 211);
-    width: 150px;
+   
+
+    margin: 0 10px;
     border: none;
     font-size: 24px;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    margin-right: 20%;
-
+    
+   
 }
 .js-result{
     color:var(--white);
