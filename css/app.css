@@ -314,7 +314,7 @@
       /* ======== PROJECTS ========== */
 
       .Project{
-        min-height: 500px;
+        min-height: 400px;
         width: 90%;
         margin-inline: auto;
         display: flex;
@@ -353,11 +353,11 @@
         font-weight: var(--font-weight-bold);
       }
       
-      .project-link img{
+      .project-link {
         position: absolute;
         top: 10%;
         width: 90%;
-        max-height: 350px;
+        max-height: 300px;
         padding: 2.5rem;
         border-radius: 8px;
         border: 1px solid rgb(240, 236, 236);
