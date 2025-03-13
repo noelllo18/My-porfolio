@@ -84,6 +84,7 @@
         min-width: 100vw;
         overflow-x: hidden;
         scroll-snap-type: none;
+        scroll-behavior: auto;
       }
       .span{
         font-family: "Poppins", serif;
@@ -156,14 +157,14 @@
         align-items: center;
         display: flex;
         font-weight: var(--font-weight-bold);
-        width: 90%;
+        
         margin-inline: auto;
         
         
       }
 
       .menu-wrapper, a{
-        
+       
         font-weight: var(--font-weight-bold);
         color: var(--white);
         text-decoration: none;
@@ -191,7 +192,7 @@
         margin-inline: auto;
         margin-top: 50px;
         margin-bottom: 30px;
-        position: relative;
+        
       }
      
       .icons{
@@ -225,9 +226,7 @@
       h2{
         letter-spacing: var(--letter-spacing-tight);
       }
-      .openbtn, .closebtn{
-        display: none;
-      }
+      
       /* ======== PROFILE ========== */
 
 
@@ -262,9 +261,11 @@
       .img-container {   
         border-radius: 25px;
         box-shadow: 25px 9px 5px rgba(146, 110, 240, 0.911);
-        max-height: 300px;
+        min-height: 100px;
         max-width: 300px;
         margin-bottom: 50px;
+        width: 90%;
+        margin-inline: auto;
 
         }
         .img-container img::after{
