@@ -42,7 +42,7 @@
     --text-h4: 3.2rem;
     --text-h3:  4.0rem;
     --text-h2: 4.8rem;
-    --text-h1: clamp(4em, 4vw, 8em);;
+    --text-h1: clamp(3em, 5vw, 8em);;
     
     /*=============== fontweight ==============  */
     --font-weight-normal: 400;
@@ -74,7 +74,7 @@
         min-height: 100vh;
         background: linear-gradient(to bottom, black,rgb(89, 66, 194));
         font-family: "Josefin Sans", sans-serif;
-        font-optical-sizing: auto;
+        
         
       }
       
@@ -113,7 +113,7 @@
         font-size: 3.4rem;
       }
       p{
-        font-size: 3.4rem;
+        font-size: clamp(2em, 2vw, 3em);
         color: var(--white);
         
       }
@@ -144,7 +144,7 @@
         color: var(--white);
         letter-spacing: var(--letter-spacing-tight);
         padding: 1.0rem;
-        font-size: clamp(0.3em,2vw, 3em);
+        font-size: clamp(2em,4vw, 4em);
         flex-shrink: 0;
     
 
@@ -157,20 +157,12 @@
         align-items: center;
         display: flex;
         font-weight: var(--font-weight-bold);
-        
         margin-inline: auto;
         
         
       }
 
-      .menu-wrapper, a{
-       
-        font-weight: var(--font-weight-bold);
-        color: var(--white);
-        text-decoration: none;
-        padding: 1.0rem ;
-        font-size: var(--text-paragraph);
-      }
+      
       
  
       nav a:hover{
@@ -245,6 +237,7 @@
 
       .profile, .info{
         line-height: var(--line-height-tight);
+       
         
         
       }
@@ -447,4 +440,8 @@
       
 
 
-  
+  @media (max-width: 700px) {
+     .logo{
+      display: none;
+    }
+  }
