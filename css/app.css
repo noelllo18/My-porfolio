@@ -293,7 +293,7 @@
       .about{
         width: 100%;
         
-        font-size: clamp(2em,2vw, 4em);
+        font-size: clamp(0.3em,2vw, 4em);
         /* background-color: #00ffff; */
         color: var(--white);
         
