@@ -37,7 +37,7 @@
     /*=============== fontsize ==============  */
     --text-sm: 1.2rem;
     --text-base: 1.6rem;
-    --text-paragraph: 2rem;
+    --text-paragraph:clamp(2em,2vw, 4em);;
     --text-h5: 2.4rem;
     --text-h4: 3.2rem;
     --text-h3:  4.0rem;
@@ -112,10 +112,15 @@
       h2{
         font-size: 3.4rem;
       }
-      p{
-        font-size: clamp(2em, 2vw, 3em);
+      p {
+        font-size: var(--text-paragraph);
         color: var(--white);
         
+      }
+      a{
+        font-size: var(--text-paragraph);
+        color: var(--white);
+        text-decoration: none;
       }
 
       
@@ -165,17 +170,13 @@
       
       
  
-      nav a:hover{
-       
-        color: var(--pallete-11);
-        transition: .75s ease-in forwards;
-        border-bottom: 1px solid var(--white);
+   
         
       
         
         /*-----Icons------  */
 
-      }
+     
       .icon-container{
         display: flex;
         align-items: center;
@@ -247,6 +248,7 @@
         background: -webkit-linear-gradient(90deg, #10ce7f, #608a8a);
         background-clip: text;
         -webkit-text-fill-color: transparent;
+      
         
 
       }
@@ -291,7 +293,7 @@
       .about{
         width: 100%;
         
-        font-size: clamp(3em,3vw, 4em);
+        font-size: clamp(2em,2vw, 4em);
         /* background-color: #00ffff; */
         color: var(--white);
         
@@ -440,8 +442,17 @@
       
 
 
-  @media (max-width: 700px) {
+  @media (max-width: 400px) {
      .logo{
       display: none;
     }
+    .img-container {   
+      border-radius: 25px;
+      box-shadow: 15px 5px 5px rgba(146, 110, 240, 0.911);
+      min-height: 150px;
+      max-width: 200px;
+      margin-bottom: 50px;
+      width: 90%;
+      margin-inline: auto;
+
   }
