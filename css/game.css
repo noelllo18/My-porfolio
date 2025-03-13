@@ -10,24 +10,17 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
-
-    width: 100%;
-    
+    width: 90%;
+    margin-inline: auto;
     margin-bottom: 150px;
-    
-
-   
 }
 .move-container{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 1;
     background-color: transparent ;
     backdrop-filter: blur(5px);
-    
     width: 100%;
    
 }
@@ -36,11 +29,6 @@ html{
     justify-content: center;
     align-items: center;
     width: 100%;
-  
-
- 
-    
-
 }
 
  p{
@@ -58,11 +46,7 @@ html{
     /* -------- Rock BTN --------*/
 
 .move-icon{
-   height: 50px;
-   
-    
-   
-    
+   height: 50px;  
 }
 .move-button{
     height: 70px;
@@ -72,7 +56,7 @@ html{
     background-color: transparent;
     border: 1px solid #7eb426;
     box-shadow: 0 2px 15px#94e90b;
-    margin-left: 50px;
+   
     display:flex;
     justify-content: center;
     align-items: center;
