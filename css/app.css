@@ -42,7 +42,7 @@
     --text-h4: 3.2rem;
     --text-h3:  4.0rem;
     --text-h2: 4.8rem;
-    --text-h1: clamp(1.5em, 2vw, 2.5em);;
+    --text-h1: clamp(3em, 2vw, 5em);
     
     /*=============== fontweight ==============  */
     --font-weight-normal: 400;
@@ -108,15 +108,21 @@
       textarea{
         color: #000;
         border: none;
-        border: 2px solid white;
+        border: 2px solid rgb(20, 19, 19);
         border-radius: 8px;
         padding: 10px;
         margin-top: 20px;
         font-size: 2.4rem;
+        background-color: transparent;
 
       }
       h2{
         font-size: 3.4rem;
+      }
+      h3{
+        font-size: clamp(2.5em, 2vw, 3.5em);
+        margin-bottom: 50px;
+        border: none;
       }
       p {
         font-size: var(--black);
@@ -132,34 +138,7 @@
       
       /* ======== NAVIGATION BAR ========== */
 
-      nav{
-       display: flex;
-       position: fixed;
-       background-color: #023336;
-       bottom: 5%;
-       left: 5%;
-       margin-inline: auto;
-       width: 90%;
-       justify-content: center;
-       align-items: center;
-       padding: 2.5rem;
-       border-radius: 25px;
-       background-color: var(--pallete-10);
-       backdrop-filter: blur(15px);
-       border: 1px solid rgba(255, 255, 255, 0.43);
-       box-shadow: 0 2px 15px rgba(140, 129, 167, 0.25);
-       opacity: 0.9;
-      }
-
-     nav .logo{
-        color: var(--white);
-        letter-spacing: var(--letter-spacing-tight);
-        padding: 1.0rem;
-        font-size: clamp(2em,2vw, 3em);
-        flex-shrink: 0;
-    
-
-      }
+      
  
       .menu-wrapper{
         gap: 20px;
@@ -183,45 +162,7 @@
         /*-----Icons------  */
 
      
-      .icon-container{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        width: 90%;
-        margin-inline: auto;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        
-      }
-     
-      .icons{
-        display: flex;
-        background-color: transparent;
-        backdrop-filter: blur(15px);
-        
-        border-radius: 20px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        display: flex;
-        border-radius: 50%;
-        height: 70px;
-        width: 70px;
-        background-color: #e8e8f2;
-        margin-right: 20px;
-        border: 1px solid #380ce6;
-        box-shadow: 0 2px 15px#4321cc;
-        cursor: pointer;
-        padding: 1.0rem 1.5rem;
-        transition: .5s ease-in-out;
-      }
-      .icons:hover{
-        background-color: #fef604;
-        fill: #ec0aec;
-      }
-
-
-   
+      
       h2{
         letter-spacing: var(--letter-spacing-tight);
       }
@@ -252,6 +193,9 @@
         align-items: center;
         flex-direction: column;
         font-size: var(--text-paragraph);
+        text-align: center;
+        max-width: 90%;
+        margin-inline: auto;
         
         
       }
@@ -276,6 +220,7 @@
         margin-bottom: 50px;
         width: 90%;
         margin-inline: auto;
+        margin-top: 150px;
 
         }
         .img-container img::after{
@@ -298,7 +243,7 @@
           background:linear-gradient(to right, #2c2d3b63, #408c0e, #c9e60d);
           position: absolute;
           bottom: -5%;
-          left: 0;
+          left: 40%;
           transition: .3s ease-in;
           box-shadow: 0 2px 15px rgba(12, 5, 29, 0.911);
          }
@@ -314,7 +259,7 @@
         color: var(--white);
         
       }
-   
+     
    
      
   
@@ -337,10 +282,37 @@
         position: relative;
         border-radius: 25px;
         margin-bottom: 50px;
-        
-       
-
       }
+       .skill-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 2.4rem;
+        font-weight: 800;
+        
+
+       }
+       .skill-icons{
+        
+        background: linear-gradient(to bottom, #6565d3, #050542 ) ;
+        height: 10%;
+        width: 10%;
+        display: flex;
+        border-radius: 8px;
+        justify-content: center;
+        box-shadow: 2px 0 8px rgb(100, 25, 25);
+        align-items: center;
+        
+       }
+       .titles{
+        text-align: center;
+        font-size: var(--text-h1);
+        padding: 50px;
+       }
+
+     
        .project-name h2{
         
         max-width: 500px ;
@@ -405,7 +377,7 @@
         padding: 1.0rem;
         font-size: var(--text-paragraph);
         margin-top: 50px;
-        color: var(--white);
+        color: var(--black);
         border-radius: 20px;
         margin-bottom: 480px;
       }
@@ -414,8 +386,8 @@
         background-color: transparent;
         border: none;
         font-size: 2.4rem;
-        border-bottom: 2px solid white;
-        color: var(--white);
+        border-bottom: 2px solid rgb(5, 5, 5);
+        color: var(--black);
         cursor: text;
       }
       textarea{
@@ -431,13 +403,17 @@
       }
       button{
         display: inline-flex;
-        width: 170px;
+        width: 100%;
+        text-align: center;
         padding: 1.0rem 1.5rem;
         font-size: var(--text-paragraph);
         background-color: var(--pallete-10);
         color: var(--white);
-        margin-left: 200px;
+        border: none;
         border-radius: 8px;
+      }
+      button::hover{
+        background-color: #00ffff;
       }
 
 

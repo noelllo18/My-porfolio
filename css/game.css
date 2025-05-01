@@ -4,24 +4,27 @@ html{
 
 .container-game{
     
-    margin: 150px;
+    margin: 50px;
     /* background-color: #94e90b; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 50%;
     margin-inline: auto;
     margin-bottom: 150px;
+    color: black;
+    
 }
 .move-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 1;
+    
     background-color: transparent ;
     backdrop-filter: blur(5px);
     width: 100%;
+    gap: 50px;
    
 }
 .function-container{
@@ -29,11 +32,12 @@ html{
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 
  p{
     
-    color: white;
+    color: rgb(16, 15, 15);
     margin-bottom: 20px;
 }
 .title{
@@ -47,6 +51,7 @@ html{
 
 .move-icon{
    height: 100px;  
+   
 }
 .move-button{
     height: 150px;
@@ -54,13 +59,13 @@ html{
     margin: 0 auto;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid #7eb426;
+   
     box-shadow: 0 2px 15px#94e90b;
    
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10%;
+   
     margin-bottom: 100px;
     cursor: pointer;
 }
@@ -69,7 +74,7 @@ html{
 }
 
 .score{
-    color:var(--white);
+    color:var(--black);
     margin-bottom: 60px;
 }
 .reset-btn{
@@ -80,6 +85,7 @@ html{
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+   
     margin: 0 10px;
     
 }
@@ -98,7 +104,7 @@ html{
    
 }
 .js-result{
-    color:var(--white);
+    color:black;
     font-size: 32px;
     font-weight: 700;
 }
