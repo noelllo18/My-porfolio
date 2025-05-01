@@ -124,6 +124,7 @@
       }
       h1{
         position: relative;
+        
 
       }
       h1::before{
@@ -149,6 +150,8 @@
        transform: rotateX(360deg);
        background-color: #4840A3;
        color: var(--white);
+       border-radius: 8px;
+       border: none;
        
       }
       footer{
