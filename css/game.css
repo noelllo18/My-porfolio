@@ -4,7 +4,7 @@ html{
 
 .container-game{
     
- 
+    margin: 150px;
     /* background-color: #94e90b; */
     display: flex;
     flex-direction: column;
@@ -46,10 +46,10 @@ html{
     /* -------- Rock BTN --------*/
 
 .move-icon{
-   height: 50px;  
+   height: 100px;  
 }
 .move-button{
-    height: 70px;
+    height: 150px;
     max-width: 90%;
     margin: 0 auto;
     border-radius: 50%;
