@@ -23,17 +23,17 @@
      <div class="contact">
         <h3>Let's Work Together</h3>
         <h3 ">Contact me</h3>
-            <form action="">
+            <form action="https://formsubmit.co/noel.bordaje25@gmail.com" method="POST">
                 <label for="name" >Name:</label>
-                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Full name" required>
                 <label for="email" >Email:</label>
-                <input type="text" placeholder="Email" errormessage="user@gmail.com">
-                <textarea  name="message" placeholder="message here.." id=""></textarea>
-                <button>send message</button>
+                <input type="text" aria-errormessage="Please enter email" placeholder="Email" errormessage="user@gmail.com" required>
+                <textarea  name="message" placeholder="message here.." id="" required></textarea>
+                <button class="btn-submit" type="submit" onclick="alert('Message sucessfully sent!')">send message</button>
             </form>
      </div>
      
-    <footer>
+    </footer>
    
         <div class="col2">
             <div class="icons-con">
