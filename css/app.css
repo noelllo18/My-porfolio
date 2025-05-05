@@ -293,15 +293,17 @@
         margin: 50px;
         display: grid;
         grid-template-columns: repeat(3,400px);
+        grid-template-rows: repeat(2, 500px);
         justify-content: center;
         align-items: center;
         max-width: 90%;
         margin-inline: auto;
-        gap: 2.0rem;
+        column-gap: 2.0rem;
+        row-gap: 2.0rem;
       }
       .g-img{
         width: 100%;
-        aspect-ratio: 12/9;
+        
         margin-inline: auto;
         border-radius: 8px;
         cursor: pointer;
@@ -326,18 +328,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding:20px;
+        
         border-radius: 8px;
         background-color: #050542;
-        max-width: 90%;
+        max-width:50%;
         margin-inline: auto;
-        min-height: 500px;
+        max-height: 500px;
         margin-bottom: 150px;
         
       }
       video{
-        width: 100%;
-        height: 400px;
+        width: 90%;
+        max-height: 500px;
+        
       }
   
      
