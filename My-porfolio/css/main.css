@@ -71,16 +71,14 @@
         
       }
       body{
-        color: var(--white);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background: linear-gradient(180deg, var(--pallete-1), var(--pallete-2));
-        margin-inline: auto;
-        font-family: poppins, sans-serif;
+        background: #F0F0F0 (Off-white canvas);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
         overflow-x: hidden;
         min-height: 100vh;
-        
-       
         
         
       }
@@ -88,6 +86,7 @@
       body {
         scroll-behavior: smooth;
         scroll-padding-top: 100px;
+        transition: .75s ease-in-out;
       }
 
       /* loader */
@@ -103,6 +102,8 @@
         align-items: center ;
         margin-inline: auto;
         transition: 0.75s ease-in-out;
+        animation:slider-right 4s, 1;
+          
       }
       .text{
           color: var(--pallete-16);
@@ -159,21 +160,36 @@
           transform: translateY(-100%);
         }
       }
-      
+     
       nav{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         background-color: var(--white);
         color: var(--white);
-        position: relative;
+        position: sticky;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         top: 0;
         left: 0;
         width: 100%;
+        z-index: 99;
+        animation: ;
+      }
+      nav a{
+        cursor: pointer;
+        transition: .75s ease-in-out;
+        font-size: 800;
+        animation: down 3s 1;
+      }
+      
+      nav a:hover{
+        color: var(--pallete-18);
+        border-bottom: 2px solid var(--pallete-18);
       }
       h2{
         font-family: poppins, sans-serif;
         margin-right: auto;
+        animation: down 3s 1;
       }
      
       a{
@@ -199,7 +215,7 @@
       .hero-section{
         display: flex;
         margin-top: 350px;
-       
+        
         align-items: center;
         justify-content: center;
         height: 100vh;
@@ -252,7 +268,7 @@
          
       }
       .nav-footer a{
-        color: var(--white);
+        color: var(--black);
         font-size: clamp(1.0em, 2vw, 1.5em);
         transition: .75s ease-in-out;
       }
@@ -295,22 +311,18 @@
           width: 3.5rem;
           
           border-radius: 50%;
-          background-color: rgb(26, 222, 26);
+          
           position: relative;
           z-index: 1;
       }
-      .icons svg{
-          fill: var(--white);
-          border: none;
-          
-      }
+      
       .icons::before{
           content: "";
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          opacity: 60%;
-          background-color: rgb(32, 228, 32);
+          opacity: 70%;
+          background: linear-gradient(45deg,var(--pallete-19),var(--pallete-2));
           position: absolute;
           z-index: -1;
           animation: glow  1.5s infinite;
@@ -323,11 +335,12 @@
           backdrop-filter: blur(15px);
           opacity: 50%;
           border-radius: 50%;
-          background-color: rgb(26, 222, 26);
+          background: linear-gradient(45deg,var(--pallete-16),var(--pallete-19));
           position: absolute;
           z-index: -2;
           animation: glow 1.5s infinite;
       }
+     
       @keyframes glow {
     0%{
         transform: scale(1);
@@ -358,7 +371,9 @@
       nav a{
         padding: 10px;
         font-size: clamp(0.8em, 2vw, 1.2em);
-        transition: .75s ease-in-out;
+     
+      }
+     
       }
       nav a:hover{
         color: var(--pallete-18);
